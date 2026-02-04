@@ -49,13 +49,13 @@ export function ChatWindow({
           ...withoutTemp,
           {
             id: userMessage.id.replace("temp-", ""),
-            role: "user",
+            role: "user" as const,
             content,
             createdAt: userMessage.createdAt,
           },
           {
             id: response.message_id,
-            role: response.role,
+            role: response.role as "user" | "assistant" | "system",
             content: response.content,
             createdAt: response.created_at,
             tool_calls: response.tool_calls,
