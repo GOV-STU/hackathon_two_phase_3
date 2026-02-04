@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Bot, User, CheckCircle2, XCircle, Zap } from "lucide-react";
+import { User, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface MessageBubbleProps {
