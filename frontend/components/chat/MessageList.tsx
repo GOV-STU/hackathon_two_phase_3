@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { ChatMessage } from "@/types/chat";
 import { MessageBubble } from "./MessageBubble";
 import { TypingIndicator } from "./TypingIndicator";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 interface MessageListProps {
   messages: ChatMessage[];
